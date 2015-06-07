@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Car Inventory</string>
+    <string name="no_car_msg"><b>No Cars Found!</b>\nPlease go around and add cars in the record</string>
+</resources>

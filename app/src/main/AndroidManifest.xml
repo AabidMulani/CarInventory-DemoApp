@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.abmulani.carinventory">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme"
+        android:name=".BaseApplication"
+        tools:replace="android:icon">
+
+
+        <activity
+            android:name=".activities.CarInventorySplashScreenActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".activities.CarInventoryAddCarActivity"
+            android:theme="@style/MyTheme"/>
+
+
+        <activity
+            android:name=".activities.CarInventoryDashBoardActivity"
+            android:theme="@style/MyTheme"/>
+
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="carinventory.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="in.abmulani.carinventory.database" />
+
+
+    </application>
+
+</manifest>
